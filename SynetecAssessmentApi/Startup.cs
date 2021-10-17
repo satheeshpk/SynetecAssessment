@@ -1,4 +1,3 @@
-using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -8,7 +7,6 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using SynetecAssessmentApi.Persistence;
 using SynetecAssessmentApi.Services;
-using SynetecAssessmentApi.Validators;
 
 namespace SynetecAssessmentApi
 {
@@ -34,9 +32,8 @@ namespace SynetecAssessmentApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers()
-                // add the fluent validation for validating incoming api messages
-                .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<CalculateBonusDtoValidator>());
+            services.AddControllers();
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc(_apiSettings.Version, new OpenApiInfo { Title = _apiSettings.Title, Version = _apiSettings.Version });

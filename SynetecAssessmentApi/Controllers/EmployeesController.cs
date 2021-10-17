@@ -74,6 +74,12 @@ namespace SynetecAssessmentApi.Controllers
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> Bonus(int id, [FromBody] CalculateBonusDto request)
         {
+            // if request is null return bad request
+            if (request == null) return BadRequest();
+
+            // if total amount is less thatn 0 return bad request
+            if (request.TotalBonusPoolAmount < 0) return BadRequest();
+
             try
             {
                 return Ok(await _employeeService.CalculateEmployeeBonusAsync(

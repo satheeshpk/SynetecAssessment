@@ -80,5 +80,21 @@ namespace SynetecAssessmentApi.Tests
 
             Assert.IsType<NotFoundObjectResult>(result);
         }
+
+        [Fact]
+        public async Task WhenCalculateRequestIsNull_Excpect400BadRequestResult()
+        {
+            var result = await _employeesController.Bonus(50, null);
+
+            Assert.IsType<BadRequestResult>(result);
+        }
+
+        [Fact]
+        public async Task WhenTotalBonusAmoundIsLessThanZero_Excpect400BadRequestResult()
+        {
+            var result = await _employeesController.Bonus(50, new CalculateBonusDto { TotalBonusPoolAmount = -1 });
+
+            Assert.IsType<BadRequestResult>(result);
+        }
     }
 }
