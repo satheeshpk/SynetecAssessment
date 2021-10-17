@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31512.422
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SynetecAssessmentApi", "SynetecAssessmentApi\SynetecAssessmentApi.csproj", "{5BCB6360-6A89-4338-9863-7455B8480B20}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SynetecAssessmentApi.Domain", "SynetecAssessmentApi.Domain\SynetecAssessmentApi.Domain.csproj", "{7B58C9C7-0C36-49AE-B472-ADF9C00B61D6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SynetecAssessmentApi.Persistence", "SynetecAssessment.Persistence\SynetecAssessmentApi.Persistence.csproj", "{72F75F99-9031-4DD6-B646-4926BC527038}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SynetecAssessmentApi.Core", "SynetecAssessmentApi.Core\SynetecAssessmentApi.Core.csproj", "{27BA52A1-EC49-4D69-B194-D3AFCACE5CCE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SynetecAssessmentApi.Services", "SynetecAssessmentApi.Services\SynetecAssessmentApi.Services.csproj", "{5AE00F15-0A44-4709-A2CD-0D5A8260DCA7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{A3216C4E-F581-4614-A457-3DE908FAD749}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SynetecAssessmentApi.Tests", "tests\SynetecAssessmentApi.Tests\SynetecAssessmentApi.Tests.csproj", "{3D0CF3B7-1F62-4048-B6F8-C2854852447E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5BCB6360-6A89-4338-9863-7455B8480B20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BCB6360-6A89-4338-9863-7455B8480B20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BCB6360-6A89-4338-9863-7455B8480B20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BCB6360-6A89-4338-9863-7455B8480B20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B58C9C7-0C36-49AE-B472-ADF9C00B61D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B58C9C7-0C36-49AE-B472-ADF9C00B61D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B58C9C7-0C36-49AE-B472-ADF9C00B61D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B58C9C7-0C36-49AE-B472-ADF9C00B61D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72F75F99-9031-4DD6-B646-4926BC527038}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72F75F99-9031-4DD6-B646-4926BC527038}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72F75F99-9031-4DD6-B646-4926BC527038}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72F75F99-9031-4DD6-B646-4926BC527038}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27BA52A1-EC49-4D69-B194-D3AFCACE5CCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27BA52A1-EC49-4D69-B194-D3AFCACE5CCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27BA52A1-EC49-4D69-B194-D3AFCACE5CCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27BA52A1-EC49-4D69-B194-D3AFCACE5CCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AE00F15-0A44-4709-A2CD-0D5A8260DCA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AE00F15-0A44-4709-A2CD-0D5A8260DCA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AE00F15-0A44-4709-A2CD-0D5A8260DCA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AE00F15-0A44-4709-A2CD-0D5A8260DCA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D0CF3B7-1F62-4048-B6F8-C2854852447E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D0CF3B7-1F62-4048-B6F8-C2854852447E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D0CF3B7-1F62-4048-B6F8-C2854852447E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D0CF3B7-1F62-4048-B6F8-C2854852447E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3D0CF3B7-1F62-4048-B6F8-C2854852447E} = {A3216C4E-F581-4614-A457-3DE908FAD749}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {34BFE941-C9D7-4CA5-AD9D-19A169C02E4D}
+	EndGlobalSection
+EndGlobal
